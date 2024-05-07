@@ -1,0 +1,62 @@
+@import "../../assets/scss/global";
+
+
+.card {
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 16px;
+  color: $primary-text-color;
+  &:hover,
+  &:active {
+    background-color: $white-color;
+    color: $black-color;
+    border: none;
+  }
+  .image_container {
+    width: 100%;
+    margin-bottom: 16px;
+    height: 400px;
+    .moviePoster {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+    @include devices("mobile") {
+      height: 300px;
+    }
+  }
+
+  .movie_info {
+    width: 100%;
+    font-size: 18px;
+    @include setFlex($justifyContent: space-around, $direction: column);
+    .movie_title {
+      margin-bottom: 8px;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+    }
+
+    .metaInfo {
+      margin-top: 10px;
+      @include setFlex($justifyContent: space-around, $alignItems: center);
+      width: 100%;
+      .movie_ratings {
+        text-align: center;
+        display: flex;
+        gap: 3px;
+      }
+    }
+
+    @include devices("mobile") {
+      font-size: 18px;
+    }
+  }
+  @include devices("mobile") {
+    width: 100%;
+  }
+}

@@ -1,0 +1,5 @@
+@import "../../assets/scss/global.scss";
+
+.card_container{
+    @include setFlex($flexWrap:wrap,$alignItems:stretch);
+}
