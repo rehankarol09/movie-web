@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import styles from "./style.module.scss";
 import LiveTvRoundedIcon from "@mui/icons-material/LiveTvRounded";
 interface IProps {}
-export const Header: FC<IProps> = (props) => {
+export const Header: FC<IProps> = () => {
   return (
     <header className={styles.header_container}>
       <h1 className={styles.header_text}>

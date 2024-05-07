@@ -1,4 +1,3 @@
-import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import { useAppSelector } from "../hooks/react-redux";

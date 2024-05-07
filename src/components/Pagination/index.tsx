@@ -1,5 +1,5 @@
 import { Button, Stack } from "@mui/material";
-import React, { FC } from "react";
+import  { FC } from "react";
 
 interface IProps {
   handleNextButton: () => void;

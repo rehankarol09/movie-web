@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import  { FC } from 'react'
 import { MovieList } from '../../module/MovieList'
 import { getTrendingMovies } from '../../slices/movieSlice';
 
@@ -9,7 +9,7 @@ interface IProps {}
 * @function @TrendingPage
 **/
 
-export const TrendingPage:FC<IProps> = (props) => {
+export const TrendingPage:FC<IProps> = () => {
   return (
     <>
      <MovieList

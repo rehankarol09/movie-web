@@ -102,7 +102,7 @@ const movieSlice = createSlice({
         };
       }
     );
-    builder.addCase(getTrendingMovies.rejected, (state, action) => {
+    builder.addCase(getTrendingMovies.rejected, (state) => {
       state.status = ApiStatus.failed;
       state.error = "Failed to get Data";
     });

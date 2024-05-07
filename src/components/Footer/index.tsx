@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import styles from "./style.module.scss";
 import { NavLink } from "react-router-dom";
 import { FooterLink } from "./util";
 
 interface IProps {}
-export const Footer: FC<IProps> = (props) => {
+export const Footer: FC<IProps> = () => {
   return (
     <footer className={styles.footer_container}>
       {FooterLink.map((val) => {

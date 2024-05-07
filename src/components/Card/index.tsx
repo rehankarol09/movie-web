@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styles from "./style.module.scss";
 import StarRateRoundedIcon from "@mui/icons-material/StarRateRounded";
 interface IProps {
